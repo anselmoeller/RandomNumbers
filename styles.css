@@ -1,0 +1,104 @@
+:root{
+    --primaryColorText:#000;
+    --secondColorText: #a8a8a8;
+    --darkPrimaryColor:darkblue;
+    --colorEfefects:#555;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width:100%
+}
+header{
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+header h1 a{
+    text-decoration: none;
+    color: var(--primaryColorText);
+}
+header h1 a:hover{
+    color: var(--darkPrimaryColor);
+}
+main{
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    height: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+footer a{
+    color: var(--secondColorText);
+    text-decoration: none;
+}
+
+
+/*-----------------*/
+.showNumber{
+    position: absolute;
+    top: 20%;
+    font-size: 50px;
+    word-break: break-all;
+    text-align: center;
+    padding-inline: 10px;
+}
+.inputNumbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.inputNum{
+    margin-bottom: 5px;
+    padding: 5px 15px;
+    text-align: center;
+    border: 1px solid var(--colorEfefects);
+    border-radius: 5px;
+    outline: none;
+
+}
+
+/*---------------*/
+.selectTypeNumbers{
+    padding: 1px;
+    border-radius: 7px;
+    outline: none;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.selectTypeNumbers:hover, 
+.btnRandomNumber:hover, 
+.btnResetNumbers:hover {
+    cursor: pointer;
+    color: var(--darkPrimaryColor);
+}
+
+.btnRandomNumber,
+.btnResetNumbers{
+    border-radius: 7px;
+    border: 1px solid var(--colorEfefects);
+    background-color: transparent;
+}
+
+/*---------------------*/
+
+.titleNumToType{
+    color: var(--secondColorText);
+    font-size:14px;
+}
+
+

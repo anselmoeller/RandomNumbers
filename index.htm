@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Anselmo de Paula Eller">
+    <link rel="shortcut icon" href="img/baseline_shuffle_on_white_24dp.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <title>Random Numbers by Anselmo</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.htm" title="Title of the site. Click to go to home page">
+                Random Numbers
+            </a>
+        </h1>
+    </header>
+    <main>
+        <div class="showNumber">0</div>
+        <div class="inputNumbers">
+            <span class="titleNumToType">Minimum number</span>
+            <input class="inputNum showNumMin" type="number" title="type the minimum number" placeholder="eg: 0">
+            <span class="titleNumToType">Maximun number</span>
+            <input class="inputNum showNumMax" type="number" title="type the maximum number" placeholder="eg: 100">
+
+            <div>
+                <select class="selectTypeNumbers" name="selectTypeNumbers" title="Select on type of number to random">
+                    <option value="normal">Normal</option>
+                    <option value="even">Even</option>
+                    <option value="odd">Odd</option>
+                </select>
+                <button onclick="clearAllFields()" class="btnResetNumbers">Reset</button>
+                <button class="btnRandomNumber">Random</button>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <small>
+            <a href="index.htm" title="footer of the site. Click to go to home page.">
+                Created by Anselmo De Paula Eller
+            </a>
+        </small>
+    </footer>    
+</body>
+</html>
